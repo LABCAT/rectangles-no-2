@@ -44,6 +44,10 @@ const P5Sketch = () => {
             p.background(0);
             p.strokeWeight(4);
             p.song.onended(p.logCredits);
+            if(Math.random() < 0.05){
+              const randomColor = require('randomcolor');
+              p.colours = randomColor({luminosity: 'bright', count: 6});
+            }
 
             for (let i = 0; i < cueSet1.length; i++) {
               let vars = {
