@@ -174,7 +174,7 @@ const P5Sketch = () => {
           const { currentCue } = vars;
           if (!p.cueSet2Completed.includes(currentCue)) {
             p.cueSet2Completed.push(currentCue);
-            if(currentCue > 100 && currentCue <= 140 || (currentCue > 180)){
+            if((currentCue > 100 && currentCue <= 140) || (currentCue > 180)){
                p.bigRectangles = [];
             }
             const minCount = (currentCue > 100 && currentCue <= 160) || (currentCue > 180) ? 12 : 6;
